@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Pacifico', cursive, Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+	    background: url('../images/back.jpg') center/cover no-repeat;
+	    overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #1E6776;
+	        text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.7);
+            font-size: 36px;
+            opacity: 0.9;
+            font-weight: bold;
+            
+            margin: 5px 10px 0px 10px;
+        }
+
+        .team-member-container {
+            width: 88%;
+            text-align: center;
+            display: inline-block;
+	    background-color:  #6db0ee;
+	    opacity: 0.84;
+	    border-radius: 25px;
+	    margin: 50px;
+        }
+
+        .team-member {
+            width: 20%;
+            margin: 25px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .team-member img {
+            width: 84%;
+            border-radius: 15%;
+            cursor: pointer;
+    	    display: block;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+        }
+
+        .team-member p {
+            margin: 10px 0 2px 0;
+ 	    color:  #1E6776;
+	    font-size: 20px;
+            font-weight: bold;
+        }
+
+        .team-member span {
+            font-style: italic;
+            color:  white;
+        }
+
+	.room {
+	    margin-top: 1%;
+	    margin-left: 10%;
+            margin-right: 10%;
+	    margin-bottom: 1%;
+            text-align: center;
+	}
+
+    nav {
+        background-color: #333;
+            font-size: 30px;
+        }
+
+        nav a {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 1px 12px 10px 1px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #6db0ee;
+            color: black;
+            border-radius: 40%;
+        }
+
+
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #1E6776;
+            position: fixed;
+            bottom: 0;
+            
+            width:  98%;
+            opacity: 0.85;
+            margin: 5px 10px 5px 10px;
+        }
+    </style>
+    <title>Farm 2.0</title>
+</head>
+<body>
+    <header>
+        <a align= left href="../index.html" style="color: #1E6776; text-decoration: none;">FarmIT 2.0</a> Meet the team
+    </header>   
+    <div class="room">
+     <div class="team-member-container">
+    	<div class="team-member" onclick="window.location.href='../members/Vasseur.html';">
+             <img src="../images/people/Vasseur.jpg" alt="Photo of Michaël Vasseur">
+             <p>Vasseur Michaël</p>
+             <span>Odisee Technology Campus Ghent</span>
+    	</div>
+
+     	<div class="team-member" onclick="window.location.href='../members/Carvalho.html';">
+             <img src="../images/people/Carvalho.jpeg" alt="Photo of Ari Carvalho">
+             <p>Ari Carvalho</p>
+             <span>UTAD University</span>
+    	</div>
+
+    	<div class="team-member" onclick="window.location.href='../members/Guilherme.html';">
+             <img src="../images/people/Guilherme.jpg" alt="Photo of João Guilherme Garcez">
+             <p>João Guilherme Garcez</p>
+             <span>Universidade da Maia - Porto</span>
+    	</div>
+
+    	<div class="team-member" onclick="window.location.href='../members/person4.html';">
+             <img src="../images/fotox.jpg" alt="Photo of">
+             <p>Name Teamlid 4</p>
+             <span>SchoolName 4</span>
+    	</div>
+
+    	<div class="team-member" onclick="window.location.href='../members/person5.html';">
+             <img src="../images/fotox.jpg" alt="Photo of">
+             <p>Name Teamlid 5</p>
+             <span>SchoolName 5</span>
+    	</div>
+
+    	<div class="team-member" onclick="window.location.href='../members/person6.html';">
+             <img src="../images/fotox.jpg" alt="Photo of">
+             <p>Name Teamlid 6</p>
+             <span>SchoolName 6</span>
+    	</div>
+
+    	<div class="team-member" onclick="window.location.href='../members/person7.html';">
+             <img src="../images/fotox.jpg" alt="Photo of">
+             <p>Name Teamlid 7</p>
+             <span>Schoolnaam 7</span>
+    	</div>
+
+    	<div class="team-member" onclick="window.location.href='./members/person8.html';">
+             <img src="../images/fotox.jpg" alt="Photo of">
+             <p>Name Teamlid 8</p>
+             <span>SchoolName 8</span>
+    	</div>
+        <nav>
+        
+            <a href="../index.html">Go back</a>
+        </nav>
+     </div>
+     
+    </div>
+
+    <footer>
+        &copy; 2024 Farm 2.0 | Designed by Blended Mobility Team FarmIT 2.0
+    </footer>
+</body>
+</html>
