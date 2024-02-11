@@ -1,182 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Pacifico', cursive, Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background: url('./images/back.jpg') center/cover no-repeat;
-            overflow: hidden;
-        }
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        header {
-            text-align: left;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: #1E6776;
-	        text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.7);
-            font-size: 36px;
-            opacity: 0.8;
-            font-weight: bold;
-            margin: 5px 10px 0px 10px;
-        }
+  <title>FarmIT 2.0</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-        header h1{
-            font-size: 32px;
-            margin: 0.2%;
-            padding-left: 10rem;
-            padding-right: 10rem;
-            padding-top: 0.1rem;
-            text-align: center;
-        }
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-        .info-container {
-            width: 100%;
-            text-align: center;
-            display: inline-block;
-            background-color: #6db0ee;
-            
-            opacity: 0.84;
-            border-radius: 25px;
-            margin: 50px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-        }
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-        .info-container p {
-            margin: -10px 0 -5px 0;
-            color:  #042c36;
-            font-size: 20px;
-            text-align: center;
-            
-        }
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-        .list {
-            margin: 10px 0 2px 0;
-            color:  #042c36;
-            font-size: 20px;
-            text-align: center;
-        }
-        .list ul {
-        list-style-position: inside;
-        padding: 0; 
-    }
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-        .image img {
-            width: 50%;
-            border-radius: 5%;
-    	    display: block;
-            margin:  25px auto auto auto;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-        }
-
-        nav {
-            background-color: #333;
-            font-size: 30px;
-        }
-
-        nav a {
-            float: right;
-            display: block;
-            color: white;
-            text-align: right;
-            padding: 10px 10px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background-color: #6db0ee;
-            color: black;
-            border-radius: 40%;
-        }
-	.room {
-	    margin-top: 1%;
-	    margin-left: 10%;
-        margin-right: 10%;
-	    margin-bottom: 1%;
-        
-        padding-right: 80px;
-            
-	}
-
-    .company-info {
-        background-color: #6db0ee; 
-        padding: 10px; 
-        border-radius: 10px; 
-        margin: auto; 
-
-        
-    }
-
-    .company-info a {
-        color: #0366d6; /* Linkkleur aanpassen */
-        
-    }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: #1E6776;
-            position: fixed;
-            bottom: 0;
-            
-            width:  98%;
-            opacity: 0.85;
-            margin: 5px 10px 5px 10px;
-        }
-    </style>
-    <title>Farm 2.0</title>
+  <!-- =======================================================
+  * Template Name: Squadfree
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+
 <body>
-    <header>
 
-        <h1>FarmIT 2.0 - Smart farm management IT system </h1></header>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center justify-content-between position-relative">
 
-    
-    <div class="room">
-        <div class="info-container">
-            <div class="image">
-            <img src="./images/farm.jpg" alt="Farm owners photo">
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>FarmIT 2.0</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-up">
+      <h1>FarmIT 2.0</h1>
+      <h2>Smart farm management IT system</h2>
+      <a href="#world-map" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <section id="world-map" class="world-map">
+      <div class="container">
+        <div class="section-title clear-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>The team throughout the world</h2>
         </div>
-            <h2>Company Sociedade Agricola Casal da Cotovia</h2>
+      </div>
+      <div class="w-map">
+        <img src="assets/img/europe_map.png" alt="map" />
 
-            <div class="company-info">
-                <p>
-                    Company Sociedade Agricola Casal da Cotovia, Lda Its family owned grower of Blueberries.</p>
-                    <p>It operates 100% under organic agriculture principles and certifications. It has a strong 
-                    compromise with sustainability: environmental, social and economical. </p>
-                    <p>INIAV is the State Laboratory, in the area of competences of Agriculture, Forestry and Rural 
-                    Development, which develops research activities in the agronomic and veterinary areas, 
-                    <a href="https://www.iniav.pt/" target="_blank">INIAV Website</a>
-                    Contact person Filipe Sampaio Rodrigues, Sampaio.rodrigues@gmail.com</p>
-                </p>
-            </div>           
+        <div class="pin belgium">
+          <span>Belgium</span>
+        </div>
+        <div class="pin austria">
+          <span>Austria</span>
+        </div>
+        <div class="pin lithuania">
+          <span>Lithuania</span>
+        </div>
+        <div class="pin portugal">
+          <span>Portugal</span>
+        </div>
+        <div class="pin germany">
+          <span>Germany</span>
+        </div>
+        <div class="pin iraq">
+          <span>Iraq</span>
+        </div>
+        <div class=" pin main-places casal-cotovia">
+          <span>Casal da Cotovia</span>
+        </div>
+        <div class=" pin main-places maribor">
+          <span>Maribor</span>
+        </div>
+      </div>
+    </section>
 
-        <div class="list">
-            <h3>The project:</h3>
-            <ul>
-                <li> Develop a low-cost digital assistant to farmers looking to be more sustainable and ethical</li>
-                <li> Develop an integrated system able to manage the use of water, watering, and fertigation</li>
-                <li> Providing visual maps of the farm with production, amount of water and fertilizers used</li>
-            </ul>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="content">
+              <h3>Sociedade Agricola Casal da Cotovia, Lda</h3>
+              <p>
+                Its family owned grower of Blueberries. It operates 100% under organic agriculture principles 
+                and certifications. It has a strong compromise with sustainability: environmental, social and 
+                economical.
+              </p>
+              <a href="company/Company.html" class="about-btn">About Company & Project <i class="bx bx-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts  section-bg">
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="2"
+                class="purecounter"></span>
+              <p><strong>Team Members</strong> consequuntur quae</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="2"
+                class="purecounter"></span>
+              <p><strong>Different Nationalities</strong> aut commodi quaerat</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>% of peace and love</strong> rerum asperiores dolor</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Team</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up">
+              <div class="pic"><img src="assets/img/team/Vasseur.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Vasseur Michaël</h4>
+                <span>Odisee Technology Campus Ghent</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="150">
+              <div class="pic"><img src="assets/img/team/Guilherme.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>João Guilherme Garcez</h4>
+                <span>Universidade da Maia - Porto</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/Carvalho.jpeg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ari Carvalho</h4>
+                <span>UTAD University</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up">
+              <a href="team/Niklas_Rose.html">
+                <div class="pic"><img src="./team/photos/Niklas_Rose.jpg" class="img-fluid" alt=""></div>
+              </a>
+              <div class="member-info">
+                <h4>Niklas Rose</h4>
+                <span>UAS Trier</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up">
+              <div class="pic"><img src="assets/img/team/default.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Something</h4>
+                <span>Something</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up">
+              <div class="pic"><img src="assets/img/team/default.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Something</h4>
+                <span>Something</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
 
-        <nav>   
-            <a href="./pages/team.html">Meet the Team</a>
-        </nav>
+      </div>
+    </section><!-- End Team Section -->
 
-        
+    <!-- ======= Contact Section ======= -->
+    <!--
+    <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.</p>
         </div>
+
+        <div class="row">
+          
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+          
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p> Sampaio.rodrigues@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+    </section>
+    -->
+    <!-- End Contact Section -->
+  
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Sociedade Agricola Casal da Cotovia, Lda </h3>
+              <p>
+                <strong>Email:</strong>  Sampaio.rodrigues@gmail.com<br>
+              </p>
+              <!--
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <la href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <footer>
-        &copy; 2024 Farm 2.0 | Designed by Blended Mobility Team FarmIT 2.0
-    </footer>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Squadfree</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
